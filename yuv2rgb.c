@@ -120,6 +120,11 @@ int get_filesize(const char *s, CvSize *sz)
 		sz->height = 480;
 		return 1;
 	}
+	else if (st.st_size == 155648) {
+		sz->width = 320;
+		sz->height = 240;
+		return 1;
+	}
 
 	return 0;
 }
